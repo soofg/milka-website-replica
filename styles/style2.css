@@ -1,0 +1,1222 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    overflow-x: hidden;
+    margin-top: 6.2em;
+}
+
+header {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: whitesmoke;
+    z-index: 2;
+    width: 100%;
+
+}
+
+header nav {
+    flex-grow: 0.5;
+}
+
+
+header nav ul {
+    max-height: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 500ms ease;
+    transform: translateX(-6vw);
+    background: white;
+    color: #3b2774;
+}
+
+header nav li {
+    flex-grow: 1;
+    text-align: center;
+    min-width: 1em;
+}
+
+
+header nav a {
+    line-height: 2em;
+    flex-direction: row;
+}
+
+nav ul li a {
+    font-size: 1.5em;
+    font-family: 'Recoleta Medium', 'Domine', serif;
+    justify-content: center;
+    color: #3b2774;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li:hover {
+    color: lavender;
+}
+
+/*search icon niet zichtbaar op kleine scherm*/
+img[src="images/searchpurple.png"] {
+    display: none;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 5.5em;
+    padding: 1.5em;
+}
+
+/*hamburger menu*/
+
+@media (min-width: 37.5em) {
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        opacity: 1;
+        background: none;
+        color: white;
+    }
+    
+    header {
+        display: flex;
+    }
+    
+    img[src="images/searchpurple.png"] {
+        display: flex;
+        z-index: 2;
+        width: 4.2em;
+    }
+    
+    
+    .menuknop {
+        display: none; 
+        opacity: 0;
+        max-height: 0;
+        max-width: 0;
+    }
+}
+
+.menuknop {
+    font-size: 1.4em;
+    left: 0;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-left: 0.5em;
+    text-align: left;
+}
+
+/*class for toggle*/
+
+.toonMenu {
+    max-height: 90em;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+h1 {
+    display: block;
+    font-family: 'Recoleta Medium', 'Domine', serif;
+    font-size: 1.5em;
+    color: #3b2774;
+    text-align: center;
+    left: 70%;
+    top: 70%;
+    transform: translate(-70%, -30%);
+    z-index: 1;
+    position: relative;
+    margin-left: 50% auto;
+    margin-right: 50% auto;
+}
+
+h3 {
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    color: #3b2774;
+    text-align: center;
+    left: 60%;
+    top: 6.5em;
+    transform: translate(-70%, -30%);
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    margin-left: 50% auto;
+    margin-right: 50% auto;
+}
+
+h2 {
+    font-family: 'Recoleta Medium', 'Domine', serif; 
+    text-align: center;
+    display: flex;
+}
+
+p {
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*images*/
+
+/*images homepagina*/
+header > img[src="images/Milka%20logo.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+    padding: 1em;
+}
+
+img[src="images/milka%20cow.png" ] {
+    display: flex;
+    position: relative;
+    right: 12em;
+}
+
+img[src="images/milka%20nature2.png"]{
+    display: flex;
+    position: relative;
+    left: 10em;
+    top: -20em;
+    border: 0.313em solid white;
+    box-shadow: 0.250em 0.250em 0.313em grey;
+    transform: rotate(7deg);
+    width: 70%;
+    height: auto;
+}
+
+/*breakpoint voor begin van de pagina*/
+
+@media (min-width: 31.250em) {
+    img[src="images/milka%20cow.png" ] {
+        width: 70%;
+        right: 15em;
+        height: auto;
+        position: relative;
+    }
+    
+    img[src="images/milka%20nature2.png"] {
+        position: relative;
+        width: 30%;
+        left: 15em;
+    }
+    
+    main > div > section > a {
+    top: 60%;
+    left: 50%;
+    font-size: 1.5em;
+
+}
+    
+}
+
+@media (min-width: 43.750em){
+    h1 {
+    font-size: 3em;
+    display: block;
+    font-family: 'Recoleta Medium', 'Domine', serif;
+    color: #3b2774;
+    text-align: center;
+    left: 70%;
+    top: 70%;
+    transform: translate(-70%, -30%);
+    z-index: 1;
+    position: relative;
+    margin-left: 50% auto;
+    margin-right: 50% auto;
+    }
+}
+
+
+@media (min-width: 56.250em) {
+    img[src="images/milka%20cow.png" ] {
+        width: 50%;
+        right: 25em;
+        height: auto;
+        position: relative;
+    }
+    
+    img[src="images/milka%20nature2.png"] {
+        position: relative;
+        width: 30%;
+        left: 25em;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+    
+    h3 {
+        top: 9em;
+        
+    }
+    
+    main > div > section > a {
+    top: 10em;
+    left: 50%;
+    font-size: 1.5em;
+   
+}
+    
+}
+
+
+
+
+
+/*buttons*/
+
+button {
+    left: 6em;
+    right: 6em;
+    top: 20em;
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #7d6baa;
+    color: white;
+    border-radius: 30em;
+    border-color: #7d6baa;
+    padding: 0.625em; 
+    margin: 0.625em;
+}
+
+.menuknop {
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+    font-size: 1.188em;
+    left: 0;
+    top: 0;
+    padding: 0.313em;
+    padding-bottom: 0;
+}
+
+/*startknop*/
+
+main > div > section > a {
+    border-radius: 3.750em;
+    border: 0.5em #7d6baa;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 1.5em;
+    transform: translate(-50%, -70%);
+    background-color: #7d6baa;
+    border-radius: 30em;
+    color: white;
+    border-style: solid;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main > div > section > a:hover {
+box-shadow: inset 0em -0.625em 1.238em -0.938em black;
+}
+
+/*sections opmaak*/
+
+main > div > section {
+    display: block;
+    margin: 0;
+}
+
+main > section:nth-of-type(1) {
+    display: block;
+    padding: 0.625em;
+    color: #7d6baa;
+}
+
+main > section:nth-of-type(2) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+    
+}
+
+main > section:nth-of-type(3) {
+    display: block;
+    background-color: antiquewhite;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(4) {
+    display: block;
+    color: #7d6baa;
+    margin: 0;
+    padding: 0.625em;
+    
+}
+
+main > section:nth-of-type(5) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+    
+}
+
+main > section:nth-of-type(6) {
+    display: block;
+    background-color: antiquewhite;
+    padding: 0.625em;
+}
+
+
+main > section:nth-of-type(7) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(8) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+    
+}
+
+main > section:nth-of-type(9) {
+    display: block;
+    background-color: antiquewhite;
+    padding: 0.625em;
+}
+
+
+main > section:nth-of-type(10) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(11) {
+    display: block;
+    background-color: antiquewhite;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(12) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+    
+}
+
+main > section:nth-of-type(13) {
+    display: block;
+    background-color: antiquewhite;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(14) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(15) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(16) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(17) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(18) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(19) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(20) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(21) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(22) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(23) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(24) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(25) {
+    display: block;
+    background-color: #7d6baa;
+    color: white;
+    margin: 0;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(26) {
+    display: block;
+    padding: 0.625em;
+}
+
+main > section:nth-of-type(27) {
+    display: block;
+    padding: 0.625em;
+}
+    
+
+
+/*responsive grid lay-out grote schermen*/
+
+@media only screen and (min-width: 700px) {
+    main > section:nth-of-type(1) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(3) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(4) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(5) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(6) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(7) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(8) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(9) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(10) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(11) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(12) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(13) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(14) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(15) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(16) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(17) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(18) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(19) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(20) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(21) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(22) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(23) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(24) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(25) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(26) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+    main > section:nth-of-type(27) {
+        display: grid;
+        grid-template-columns: 70% auto;
+        padding: 2em;
+    }
+    
+}
+    
+    
+/*images en tekst van sections in juiste gridkolom*/
+
+img[src="images/1826%20milka%20guy.png"] {
+    grid-area: right;
+}
+
+
+main > section:nth-of-type(1) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    
+}
+
+/*__*/
+    
+main > section:nth-of-type(2) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1901%20milka%20chocolade.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(3) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/duitsland%20milka.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(4) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/oostenrijk%20milka.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(5) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+
+/*__*/
+    
+main > section:nth-of-type(6) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/goudkleurige%20milka.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(7) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/seizoensproducten.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(8) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1950%20milka.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(9) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1962-logo%20milka.png" ] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(10) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+/*__*/
+    
+main > section:nth-of-type(11) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/milka%20cow2.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(12) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1977.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(13) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1986%20nussini.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+    
+main > section:nth-of-type(14) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1987%20milka%20hart.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(15) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1988%20milka.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(16) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1995.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(17) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/1998%20milka%20koe%20bday.jpg"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(18) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+
+/*__*/
+
+main > section:nth-of-type(19) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+
+/*__*/
+
+main > section:nth-of-type(20) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2007%20milka.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(21) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+
+/*__*/
+
+main > section:nth-of-type(22) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2012.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(23) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2016-im-herzen-zart.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(24) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2018%20milka%20moderne%20look.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(25) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2018%20part%20two%20mmmax.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(26) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2019-cocoalife-logo.png"] {
+    grid-area: right;
+
+}
+
+/*__*/
+
+main > section:nth-of-type(27) > p {
+    grid-area: left;
+    grid-column: 1 / 2;
+    display: flex;
+    padding-right: 1em;
+    
+}
+    
+img[src="images/2020%20maak%20de%20nieuwe%20smaak.png"] {
+    grid-area: right;
+
+}
+
+/*footer*/
+
+footer {
+    color: mediumpurple;
+    margin: 2em;
+}
+
+/*li kopjes van footer*/
+main > footer > ul > li:nth-of-type(1) {
+    text-decoration: underline;
+    text-align: center;
+    max-height: auto;
+    max-width: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main > footer > img[src="images/Milka%20logo.png"] {
+    display: block;
+    width: 13em;
+    height: 7em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[src="images/socials-removebg-preview.png"] {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*op mobiel alleen drie  navigatie opties*/
+
+main > footer > ul > ul:nth-of-type(1) > li {
+    display: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*op desktop alle drie navigatie opties + subopties*/
+@media (min-width: 77.5em) {
+    footer {
+        display: grid;
+        grid-template-columns: 20em 20em 20em 20em;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    main > footer > ul > li:nth-of-type(1) {
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    main > footer > ul > ul:nth-of-type(1) > li {
+        display: flex;
+    }
+    
+    main > footer > img[src="images/Milka%20logo.png"] {
+        width: 15em;
+        height: 8em;
+        margin: 1em;
+    }
+    
+    img[src="images/socials-removebg-preview.png"]{
+        grid-column: 2 /4;
+    }
+    
+    /*h3 en start knop van aan het begin van de pagina*/
+    h3 {
+        top: 20%;
+    }
+    
+    main > div > section > a {
+        top: 15em;
+    }
+
+    
+/*div om knoppen op de plekken te houden*/
+#stickingintoplace {
+    position: relative;
+    height: 60%;
+    
+}
+    
+/*animation*/
+    
+    @keyframes Imageflip {
+        0% {
+            transform: scale(0.1);
+            transform: rotateY(30deg);
+            opacity: 0;
+        }
+
+        60% {
+            transform: scale(1.2);
+            transform: rotateY(90deg);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            transform: rotateY(180deg);
+            
+        }
+    }
+    
+    @keyframes Imagerotation {
+        0% {
+            transform: scale(0.1);
+            transform: rotate(30deg);
+            opacity: 0;
+        }
+
+        60% {
+            transform: scale(1.2);
+            transform: rotate(90deg);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            transform: rotate(360deg);
+            
+        }
+    }
+    
+
+main > section > img:hover {
+    animation-name: Imagerotation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+
+}
+    
+h2:hover {
+    animation-name: Imageflip;
+    animation-duration: 3s;
+    animation-timing-function: ease; 
+        
+    }
+    
+main > div > section > a:hover {
+        transition: scale(1);
+        transition-timing-function: ease;   
+    }
+    
+
+
+
+
